@@ -11,13 +11,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  support_zendesk_interface:
-    path: ../support_zendesk_interface
-  support_zendesk_android:
-    path: ../support_zendesk_android
-  support_zendesk_ios:
-   
-    path: ../support_zendesk_ios
+  support_zendesk_interface: {git: { url: git@github.com:Dersh/zendesk.git, path: zendesk/support_zendesk_interface, ref: 0a11fe6d45681919291ada7950a8a022198e732c }}
+  support_zendesk_android: {git: { url: git@github.com:Dersh/zendesk.git, path: zendesk/support_zendesk_android, ref: 0a11fe6d45681919291ada7950a8a022198e732c }}
+  support_zendesk_ios: {git: { url: git@github.com:Dersh/zendesk.git, path: zendesk/support_zendesk_ios, ref: 0a11fe6d45681919291ada7950a8a022198e732c }}
 
 dev_dependencies:
   flutter_test:
