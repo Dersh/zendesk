@@ -1,0 +1,27 @@
+name: support_zendesk_ios
+description: A Flutter plugin that provides a Zendesk widget on iOS.
+version: 0.0.1
+homepage: https://www.brainrocket.com/
+publish_to: none
+
+environment:
+  sdk: ">=2.16.2 <3.0.0"
+  flutter: ">=2.5.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  support_zendesk_interface:
+    path: ../support_zendesk_interface
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  lint: ^1.8.2
+  pigeon: ^3.0.0
+
+flutter:
+  plugin:
+    platforms:
+      ios:
+        pluginClass: SupportZendeskFlutterPlugin

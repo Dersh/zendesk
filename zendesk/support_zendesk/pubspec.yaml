@@ -1,0 +1,33 @@
+name: support_zendesk
+description: Flutter interface for Zendesk Mobile SDK
+version: 0.0.1
+homepage: https://www.brainrocket.com/
+publish_to: none
+
+environment:
+  sdk: ">=2.16.2 <3.0.0"
+  flutter: ">=2.5.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  support_zendesk_interface:
+    path: ../support_zendesk_interface
+  support_zendesk_android:
+    path: ../support_zendesk_android
+  support_zendesk_ios:
+   
+    path: ../support_zendesk_ios
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  lint: ^1.8.2
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        default_package: support_zendesk_android
+      ios:
+        default_package: support_zendesk_ios
